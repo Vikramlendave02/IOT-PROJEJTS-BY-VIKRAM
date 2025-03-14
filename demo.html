@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+  <title>ESP8266 Web Control</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(45deg, #4facfe, #00f2fe);
+      color: white;
+    }
+    h1 {
+      margin: 15px 0;
+    }
+    .button {
+      border: none;
+      border-radius: 8px;
+      color: white;
+      padding: 16px 40px;
+      font-size: 20px;
+      cursor: pointer;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+      transition: transform 0.2s, box-shadow 0.2s;
+      margin: 5px;
+    }
+    .button:hover {
+      transform: scale(1.1);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    }
+    /* Green button for ON state */
+    .button.on {
+      background-color: red;
+    }
+    /* Red button for OFF state */
+    .button.off {
+      background-color: green;
+    }
+    .container {
+      padding: 20px;
+      max-width: 600px;
+      margin: auto;
+    }
+    p {
+      margin: 15px 0;
+    }
+    footer {
+      margin-top: 40px;
+      font-size: 14px;
+      color: #f0f0f0;
+    }
+    footer a {
+      color: #ff5722;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>ESP8266 Web Control</h1>
+  <div class="container">
+    <!-- GPIO 5 with OFF state (Red button for OFF) -->
+    <p>GPIO 5 - State: OFF</p>
+    <p><button class="button off">Turn ON</button></p>
+    
+    <!-- GPIO 4 with ON state (Green button for ON) -->
+    <p>GPIO 4 - State: ON</p>
+    <p><button class="button on">Turn OFF</button></p>
+  </div>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>Designed and Developed by <a href="https://www.example.com" target="_blank">Vikram</a></p>
+  </footer>
+</body>
+</html>
